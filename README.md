@@ -14,15 +14,6 @@ The other picture (desired_output.jpeg) presents the favorite manner, but the li
 
 I see this manner of wrong clustering in other datasets, as well.
 
-It is the code:
-
-import pandas as pd
-from k_means_constrained import KMeansConstrained
-
-am = pd.read_csv('am.csv')
-db = KMeansConstrained(n_clusters = 4,size_max=20,random_state=0)
-result = list(db.fit_predict(am))
-
 The ESRI Shapefiles including Glasfiber lines, House points and the output are also shared just in case that somebody wants to visualize the output. But they are not necessary for debug. 
 
 
